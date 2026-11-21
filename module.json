@@ -1,0 +1,33 @@
+{
+  "id": "apex-archetype-alignment-items",
+  "title": "Apex BC \u2014 Archetype Alignment Items",
+  "description": "Adds a compendium of zero-XP alignment credit items (+1 and +5) for Black Crusade Apex characters.",
+  "version": "0.3.2",
+  "authors": [
+    {
+      "name": "SgtSmith95",
+      "url": "https://github.com/SgtSmith95"
+    }
+  ],
+  "compatibility": {
+    "minimum": "14"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "black-crusade-apex",
+        "type": "system"
+      }
+    ]
+  },
+  "esmodules": [
+    "alignment-items.mjs"
+  ],
+  "url": "https://github.com/SgtSmith95/Apex-BC-Alignment-Talents",
+  "manifest": "https://github.com/SgtSmith95/Apex-BC-Alignment-Talents/releases/latest/download/module.json",
+  "download": "https://github.com/SgtSmith95/Apex-BC-Alignment-Talents/releases/download/v0.3.2/apex-archetype-alignment-items.zip",
+  "license": "LICENSE",
+  "readme": "README.md",
+  "bugs": "https://github.com/SgtSmith95/Apex-BC-Alignment-Talents/issues",
+  "changelog": "https://github.com/SgtSmith95/Apex-BC-Alignment-Talents/releases"
+}

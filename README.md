@@ -10,13 +10,24 @@ A Foundry VTT module providing zero-XP alignment credits for characters using th
 
 ## Installation
 
-Copy `apex-archetype-alignment-items` to your Foundry `Data/modules` directory and enable it in the world. On first load as GM, the module creates the **Apex BC — Archetype Alignment Credits** world compendium.
+### Foundry manifest (after publishing a GitHub release)
+
+In Foundry's **Add-on Modules → Install Module** window, paste the manifest URL:
+
+`https://github.com/SgtSmith95/Apex-BC-Alignment-Talents/releases/latest/download/module.json`
+
+Enable the module in a Black Crusade Apex world. On first load as GM, it creates the **Apex BC — Archetype Alignment Credits** world compendium.
+
+### Manual installation
+
+Download the release ZIP, extract its contents into `Data/modules/apex-archetype-alignment-items`, and enable the module in the world. The module directory must contain `module.json` and `alignment-items.mjs`.
+
 
 ## Usage
 
 The compendium contains +1 and +5 items for Khorne, Nurgle, Slaanesh, and Tzeentch. Drag an item onto a character to add the corresponding number of alignment credits. Removing the item removes only the credits associated with that item.
 
-Credits are stored as zero-cost entries in `system.dh2e.advanceLog`. A +5 item also assigns the character's current alignment to bypass the sheets usual 10 Corruption threshold. A +1 item changes only the alignment tally. Removing a +5 item does not automatically restore the previous alignment.
+Credits are stored as zero-cost entries in `system.dh2e.advanceLog`. A +5 item also assigns the character's current alignment to bypass the sheet's usual 10 Corruption threshold. A +1 item changes only the alignment tally. Removing a +5 item does not automatically restore the previous alignment.
 
 The items do not grant talents or spend XP. Alignment credits may affect Mark of Chaos thresholds where the system derives them from advancement history.
 
@@ -24,6 +35,11 @@ The module creates a world compendium rather than bundling a database pack; its 
 
 ## Notes
 
+
 - Verify item behavior in a test world before applying credits to existing characters.
 - This module has not been tested in a live Foundry v14 instance.
 - No external libraries are required.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
